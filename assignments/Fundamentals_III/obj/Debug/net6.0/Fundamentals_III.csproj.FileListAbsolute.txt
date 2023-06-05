@@ -1,0 +1,15 @@
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\bin\Debug\net6.0\Fundamentals_III.exe
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\bin\Debug\net6.0\Fundamentals_III.deps.json
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\bin\Debug\net6.0\Fundamentals_III.runtimeconfig.json
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\bin\Debug\net6.0\Fundamentals_III.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\bin\Debug\net6.0\Fundamentals_III.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\Fundamentals_III.csproj.AssemblyReference.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\Fundamentals_III.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\Fundamentals_III.AssemblyInfoInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\Fundamentals_III.AssemblyInfo.cs
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\Fundamentals_III.csproj.CoreCompileInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\Fundamentals_III.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\refint\Fundamentals_III.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\Fundamentals_III.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\Fundamentals_III.genruntimeconfig.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_III\obj\Debug\net6.0\ref\Fundamentals_III.dll
