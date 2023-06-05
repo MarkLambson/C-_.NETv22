@@ -1,0 +1,15 @@
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\bin\Debug\net6.0\Fundamentals_Assignment.exe
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\bin\Debug\net6.0\Fundamentals_Assignment.deps.json
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\bin\Debug\net6.0\Fundamentals_Assignment.runtimeconfig.json
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\bin\Debug\net6.0\Fundamentals_Assignment.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\bin\Debug\net6.0\Fundamentals_Assignment.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\Fundamentals_Assignment.csproj.AssemblyReference.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\Fundamentals_Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\Fundamentals_Assignment.AssemblyInfoInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\Fundamentals_Assignment.AssemblyInfo.cs
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\Fundamentals_Assignment.csproj.CoreCompileInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\Fundamentals_Assignment.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\refint\Fundamentals_Assignment.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\Fundamentals_Assignment.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\Fundamentals_Assignment.genruntimeconfig.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Fundamentals_Assignment\obj\Debug\net6.0\ref\Fundamentals_Assignment.dll
