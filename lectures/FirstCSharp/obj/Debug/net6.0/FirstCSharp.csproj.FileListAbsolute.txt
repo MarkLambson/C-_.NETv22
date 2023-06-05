@@ -1,0 +1,15 @@
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.AssemblyReference.cache
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\bin\Debug\net6.0\FirstCSharp.exe
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\bin\Debug\net6.0\FirstCSharp.deps.json
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\bin\Debug\net6.0\FirstCSharp.runtimeconfig.json
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\bin\Debug\net6.0\FirstCSharp.dll
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\bin\Debug\net6.0\FirstCSharp.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\FirstCSharp.dll
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\refint\FirstCSharp.dll
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\FirstCSharp.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\FirstCSharp.genruntimeconfig.cache
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\FirstCSharp\obj\Debug\net6.0\ref\FirstCSharp.dll
