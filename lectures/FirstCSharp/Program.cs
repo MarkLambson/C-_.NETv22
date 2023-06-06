@@ -1,5 +1,5 @@
-﻿string someString = "Hello World!";
-int someNum = 39;
+﻿// string someString = "Hello World!";
+// int someNum = 39;
 //someNum = someString; -----> will not work, we declare what this data is, and it can only be that (int, string, etc.) 
 
 
@@ -55,9 +55,9 @@ void PrintDivisibleNumber (int num = 100)
     }
 }
 
-// PrintDivisibleNumber();
-// Console.WriteLine("=================================");
-// PrintDivisibleNumber(25);
+PrintDivisibleNumber();
+Console.WriteLine("=================================");
+PrintDivisibleNumber(25);
 // --------------------------------------------------------------------------------------------------------//
 
 
