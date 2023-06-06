@@ -1,0 +1,15 @@
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\bin\Debug\net6.0\OOPIntro.exe
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\bin\Debug\net6.0\OOPIntro.deps.json
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\bin\Debug\net6.0\OOPIntro.runtimeconfig.json
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\bin\Debug\net6.0\OOPIntro.dll
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\bin\Debug\net6.0\OOPIntro.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\OOPIntro.csproj.AssemblyReference.cache
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\OOPIntro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\OOPIntro.AssemblyInfoInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\OOPIntro.AssemblyInfo.cs
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\OOPIntro.csproj.CoreCompileInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\OOPIntro.dll
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\refint\OOPIntro.dll
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\OOPIntro.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\OOPIntro.genruntimeconfig.cache
+C:\Users\lambs\Desktop\C#_.NETv22\lectures\OOPIntro\obj\Debug\net6.0\ref\OOPIntro.dll
