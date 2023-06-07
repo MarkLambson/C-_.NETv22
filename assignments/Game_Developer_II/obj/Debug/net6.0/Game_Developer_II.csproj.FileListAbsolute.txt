@@ -1,0 +1,15 @@
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\bin\Debug\net6.0\Game_Developer_II.exe
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\bin\Debug\net6.0\Game_Developer_II.deps.json
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\bin\Debug\net6.0\Game_Developer_II.runtimeconfig.json
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\bin\Debug\net6.0\Game_Developer_II.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\bin\Debug\net6.0\Game_Developer_II.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\Game_Developer_II.csproj.AssemblyReference.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\Game_Developer_II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\Game_Developer_II.AssemblyInfoInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\Game_Developer_II.AssemblyInfo.cs
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\Game_Developer_II.csproj.CoreCompileInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\Game_Developer_II.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\refint\Game_Developer_II.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\Game_Developer_II.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\Game_Developer_II.genruntimeconfig.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\Game_Developer_II\obj\Debug\net6.0\ref\Game_Developer_II.dll
