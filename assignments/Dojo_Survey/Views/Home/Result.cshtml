@@ -1,3 +1,5 @@
+@model Survey
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +15,10 @@
 @* displayed survey info *@
         <h1 class="fw-bold text-decoration-underline mb-3">Submitted Info</h1>
         <ul class="list-unstyled mb-3">
-            <li><span class="text-info text-decoration-underline fw-bold">Name:</span> @ViewBag.Name</li>
-            <li><span class="text-success text-decoration-underline fw-bold">Dojo Location:</span> @ViewBag.Location</li>
-            <li><span class="text-warning text-decoration-underline fw-bold">Favorite Language:</span> @ViewBag.Language</li>
-            <li><span class="text-danger text-decoration-underline fw-bold">Comment (optional):</span> @ViewBag.Comment</li>
+            <li><span class="text-info text-decoration-underline fw-bold">Name:</span> @Model.Name</li>
+            <li><span class="text-success text-decoration-underline fw-bold">Dojo Location:</span> @Model.Location</li>
+            <li><span class="text-warning text-decoration-underline fw-bold">Favorite Language:</span> @Model.Language</li>
+            <li><span class="text-danger text-decoration-underline fw-bold">Comment (optional):</span> @Model.Comment</li>
         </ul>
 
 @* button to go back *@

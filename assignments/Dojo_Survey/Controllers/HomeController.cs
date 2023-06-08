@@ -18,17 +18,12 @@ public class HomeController : Controller
     {
         return View();
     }
-//work in here------------------------------------------------------------------------------------------//
+    //work in here------------------------------------------------------------------------------------------//
 
     [HttpPost("survey")]
-    public IActionResult SurveySave(string Name, string Location, string Language, string Comment)
+    public IActionResult SurveySave(Survey newSurvey)
     {
-        ViewBag.Name = Name;
-        ViewBag.Location = Location;
-        ViewBag.Language = Language;
-        ViewBag.Comment = Comment;
-        // return view to not lose ViewBag info, Redirect will lose the bag
-        return View("result");
+        return View("result", newSurvey);
     }
 
     [HttpGet("results")]
@@ -37,7 +32,7 @@ public class HomeController : Controller
         return View("result");
     }
 
-//^^ work in here -----------------------------------------------------------------------------------------//
+    //^^ work in here -----------------------------------------------------------------------------------------//
     [HttpGet("privacy")]
     public IActionResult Privacy()
     {
