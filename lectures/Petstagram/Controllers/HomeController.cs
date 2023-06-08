@@ -21,21 +21,23 @@ public class HomeController : Controller
 
 //----------below is for the add pet form-----------//
     [HttpPost("addPet")]
-    public IActionResult AddPet(string Name, string Type, int Age)
+    public IActionResult AddPet(Pet newPet)
     {
-        Console.WriteLine($"{Name} is our newest pet! He is a {Type} and is {Age} year(s) old!");
-        if(Type == "tortoise")
+        //this is saying if model state is not valid, keep user in Index page to display error msgs
+        if(!ModelState.IsValid)
+        {
+            return View("Index");
+        }
+        Console.WriteLine($"{newPet.Name} is our newest pet! He is a {newPet.Type} and is {newPet.Age} year(s) old!");
+        if(newPet.Type == "tortoise")
         {
             //you can use ViewBag to add form data and display it on another page here (will go to DB when we start using)
             ViewBag.SecretMessage = "You are a shiny pokemon!";
-            ViewBag.Name = Name;
-            ViewBag.Type = Type;
-            ViewBag.Age = Age;
-            return View("Secret");
+            return View("Secret", newPet);
         }
         return Redirect("/");
     }
-//-----------------------end form-------------------------//
+//-------------------end form---------------------//
 
     [HttpGet("privacy")]
     public IActionResult Privacy()
