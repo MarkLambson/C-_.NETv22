@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Dojo_Survey/1.0.0": {
+        "runtime": {
+          "Dojo_Survey.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dojo_Survey/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
