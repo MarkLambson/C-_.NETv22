@@ -23,6 +23,7 @@ May need to move @model below lines 1-3 if same error occurs *@
                 <span asp-validation-for="Location" class="text-danger"></span>
                 <select asp-for="Location" class="form-control w-50" id="location">
                     @* select needs asp-for also  *@
+                    @* add in a option with "--Select--" to test for null *@
                     <option value="San Jose">San Jose</option>
                     <option value="Burbank">Burbank</option>
                     <option value="New York">New York</option>
