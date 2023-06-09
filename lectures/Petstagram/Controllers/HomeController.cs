@@ -60,6 +60,12 @@ public class HomeController : Controller
         return RedirectToAction("Success");
     }
 
+    [HttpGet("success")]
+    public IActionResult Success()
+    {
+        return View("Success");
+    }
+
     [HttpPost("clearSession")]
     public IActionResult ClearSession()
     {
