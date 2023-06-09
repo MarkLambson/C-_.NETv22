@@ -23,13 +23,11 @@ public class HomeController : Controller
     [HttpPost("survey")]
     public IActionResult SurveySave(Survey newSurvey)
     {
+        if (!ModelState.IsValid)
+        {
+            return View("Index");
+        }
         return View("result", newSurvey);
-    }
-
-    [HttpGet("results")]
-    public ViewResult Result()
-    {
-        return View("result");
     }
 
     //^^ work in here -----------------------------------------------------------------------------------------//

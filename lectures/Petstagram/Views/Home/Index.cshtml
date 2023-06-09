@@ -5,10 +5,39 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h2>Add a pet to our project</h2>
 
+@* SESSION FORM *@
 <div class="container w-75 mx-auto">
-    <h2 class="text-center">New Pet</h2>
+    <h2 class="text-center">Session Pet</h2>
+<form class="shadow p-3 rounded" asp-controller="Home" asp-action="CreateWithSession" method="POST">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <input class="form-control" asp-for="Name">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Type"></label>
+        <span asp-validation-for="Type" class="text-danger"></span>
+        <input class="form-control" asp-for="Type">
+    </div>    
+
+    <div class="mb-3">
+        <label asp-for="Age"></label>
+        <span asp-validation-for="Age" class="text-danger"></span>
+        <input class="form-control" asp-for="Age">
+    </div>
+
+    <button type="submit">Add Pet</button>
+</form>
+</div>
+
+
+
+
+@* VIEWBAG FORM  *@
+<div class="container w-75 mx-auto">
+    <h2 class="text-center">ViewBag Pet</h2>
 
 <form class="shadow p-3 rounded" asp-controller="Home" asp-action="AddPet" method="POST">
     <div class="mb-3">
@@ -22,7 +51,7 @@
         <span asp-validation-for="Type" class="text-danger"></span>
         <input class="form-control" asp-for="Type">
     </div>    
-    
+
     <div class="mb-3">
         <label asp-for="Age"></label>
         <span asp-validation-for="Age" class="text-danger"></span>
@@ -31,5 +60,9 @@
 
     <button type="submit">Add Pet</button>
 </form>
+</div>
+
+
+
 
 </div>

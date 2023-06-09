@@ -20,7 +20,7 @@ public class HomeController : Controller
         return View();
     }
 
-//----------below is for the add pet form-----------//
+//----------work in here-----------//
     [HttpPost("addPet")]
     public IActionResult AddPet(Pet newPet)
     {
@@ -38,7 +38,40 @@ public class HomeController : Controller
         }
         return Redirect("/");
     }
-//-------------------end form---------------------//
+
+    [HttpPost("addPetSession")]
+    public IActionResult CreateWithSession(Pet newPet)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View("Index");
+        }
+        //key value pairs                key         value
+        HttpContext.Session.SetString("PetName", newPet.Name);
+        HttpContext.Session.SetString("PetType", newPet.Type);
+        HttpContext.Session.SetInt32("PetAge", newPet.Age);
+
+        string? sessionName = HttpContext.Session.GetString("PetName");
+        string? sessionType = HttpContext.Session.GetString("PetType");
+        int? sessionAge = HttpContext.Session.GetInt32("PetAge");
+
+        Console.WriteLine($"Pet Name is {sessionName}, Pet Age is {sessionAge}");
+
+        return RedirectToAction("Success");
+    }
+
+    [HttpPost("clearSession")]
+    public IActionResult ClearSession()
+    {
+    // HttpContext.Session.Remove(); use to remove one item but you need to pass it as an argument
+
+        HttpContext.Session.Clear();
+        //redirect to action still redirects the user
+        //but you need to pass the function name rather than the URL
+        return RedirectToAction("Index");
+    }
+
+//-------------------work in here---------------------//
 
     [HttpGet("privacy")]
     public IActionResult Privacy()
