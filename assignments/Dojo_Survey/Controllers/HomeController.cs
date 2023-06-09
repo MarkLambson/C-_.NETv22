@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Dojo_Survey.Models;
 
 namespace Dojo_Survey.Controllers;
+//namespace after project name
 
 public class HomeController : Controller
 {
@@ -23,10 +24,13 @@ public class HomeController : Controller
     [HttpPost("survey")]
     public IActionResult SurveySave(Survey newSurvey)
     {
+        //checking to see if modelstate is valid
         if (!ModelState.IsValid)
         {
+            //returns index view with validation msgs, validation msgs only persist once which is why they need a View
             return View("Index");
         }
+        //if valid return the view for the results page with the new "newSurvey" data
         return View("result", newSurvey);
     }
 
