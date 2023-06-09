@@ -16,7 +16,7 @@ public class Survey
     [Required(ErrorMessage = "is required")]
     public string Language { get; set; }
 
-    [Range(20,250)]
+    [MinLength(20, ErrorMessage = "must be at least 20 characters long")]
     public string? Comment { get; set; }
     //include ? for null
 }
