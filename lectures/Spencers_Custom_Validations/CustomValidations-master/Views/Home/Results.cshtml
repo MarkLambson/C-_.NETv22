@@ -1,0 +1,6 @@
+@model MyForm
+
+<h1>Got Data:</h1>
+<p>@Model.Name</p>
+<p>Discount Code Applied: @(Model.DiscountCode == null ? "None applied" : Model.DiscountCode) </p>
+<a href="/">Back to form</a>

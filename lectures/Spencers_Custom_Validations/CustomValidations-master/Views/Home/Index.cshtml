@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model MyForm
+<div class="text-start mb-2">
+    <h1>Test Form</h1>
+    <form asp-action="Process" asp-controller="Home" method="post">
+        <div class="mb-2">
+            <label asp-for="Name"></label>
+            <input asp-for="Name">
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="mb-2">
+            <label asp-for="DiscountCode"></label>
+            <input asp-for="DiscountCode">
+            <span class="text-danger" asp-validation-for="DiscountCode"></span>
+        </div>
+        <div>
+            <label asp-for="FavoriteFood"></label>
+            <select asp-for="FavoriteFood" asp-items="@ViewBag.Choices">
+                <option value="">--Select one--</option>
+
+            </select>
+            <span class="text-danger" asp-validation-for="FavoriteFood"></span>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
