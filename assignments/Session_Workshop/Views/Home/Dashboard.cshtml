@@ -1,0 +1,45 @@
+@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center mx-auto w-75 d-flex align-items-center justify-content-between p-2 border-bottom border-dark">
+
+    @* displayed User Name  *@
+    <h1>Welcome, @Context.Session.GetString("UserName")!</h1>
+
+    @* logout button  *@
+    <form action="/logout" method="POST">
+        <button class="btn btn-outline-danger">Log Out</button>
+    </form>
+</div>
+
+<div class="text-center my-5 w-50 mx-auto">
+    @* displayed number  *@
+    <h1>@Context.Session.GetInt32("Num")</h1>
+
+    @* increase by 1, increase by -1 buttons *@
+    <div class="d-flex justify-content-between w-75 mx-auto mb-5">
+        <form action="/increase" method="POST" class="shadow p-3 mb-5 bg-white rounded">
+            <input type="hidden" name="num" value="1">
+            <button type="submit" class="btn btn-warning" style="width:200px; height:80px;">+ 1</button>
+        </form>
+        <form action="/increase" method="POST" class="shadow p-3 mb-5 bg-white rounded">
+            <input type="hidden" name="num" value="-1">
+            <button type="submit" class="btn btn-primary" style="width:200px; height:80px;">- 1</button>
+        </form>
+    </div>
+
+    @* double current value, random buttons  *@
+    <div class="d-flex justify-content-between w-75 mx-auto">
+        <form action="/increase" method="POST" class="shadow p-3 mb-5 bg-white rounded">
+            <input type="hidden" name="num" value="x2">
+            <button type="submit" class="btn btn-danger" style="width:200px; height:80px;">x 2</button>
+        </form>
+        <form action="/increase" method="POST" class="shadow p-3 mb-5 bg-white rounded">
+            <input type="hidden" name="num" value="random">
+            <button type="submit" class="btn btn-success" style="width:200px; height:80px;">+ Random</button>
+        </form>
+    </div>
+
+</div>

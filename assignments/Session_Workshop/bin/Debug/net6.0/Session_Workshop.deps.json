@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Session_Workshop/1.0.0": {
+        "runtime": {
+          "Session_Workshop.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Session_Workshop/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

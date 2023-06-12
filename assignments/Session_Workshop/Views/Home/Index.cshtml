@@ -1,0 +1,30 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center w-50 mx-auto">
+    <h1 class="font-weight-bold">Welcome Weary Traveller!</h1>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <div class="border border-primary rounded">
+        <div class="border border-success rounded">
+            <div class="border border-danger rounded">
+                <div class="border border-warning rounded">
+                    <div class="border border-info rounded w-100 p-3">
+
+                        <form asp-controller="Home" asp-action="Username" method="POST">
+                            <label asp-for="Name">Please Enter Your Name:</label>
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                            <input type="text" asp-for="Name" class="form-group">
+                            <button class="btn btn-primary">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
