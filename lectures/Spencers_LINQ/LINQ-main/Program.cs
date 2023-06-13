@@ -71,5 +71,3 @@ void PrintGames (List<VideoGame> games)
 
 List<VideoGame> PCByPrice = games.Where(game => game.Platform.Contains("PC")).OrderBy(game => game.Price).ToList();
 PrintGames(PCByPrice);
-
-

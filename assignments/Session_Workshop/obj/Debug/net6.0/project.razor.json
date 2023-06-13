@@ -1,6 +1,6 @@
 {
-  "SerializedFilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\lectures\\ASPIntro\\obj\\Debug\\net6.0\\project.razor.json",
-  "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\lectures\\ASPIntro\\ASPIntro.csproj",
+  "SerializedFilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\obj\\Debug\\net6.0\\project.razor.json",
+  "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Session_Workshop.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -18371,16 +18371,46 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "ASPIntro",
+  "RootNamespace": "Session_Workshop",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\lectures\\ASPIntro\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\lectures\\ASPIntro\\Views\\Home\\Videos.cshtml",
-      "TargetPath": "Views\\Home\\Videos.cshtml",
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\assignments\\Session_Workshop\\Views\\Home\\Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
       "FileKind": "mvc"
     }
   ],

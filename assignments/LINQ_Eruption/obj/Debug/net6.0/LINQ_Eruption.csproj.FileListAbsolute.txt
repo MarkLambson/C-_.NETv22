@@ -1,0 +1,15 @@
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\LINQ_Eruption.csproj.AssemblyReference.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\LINQ_Eruption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\LINQ_Eruption.AssemblyInfoInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\LINQ_Eruption.AssemblyInfo.cs
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\LINQ_Eruption.csproj.CoreCompileInputs.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\bin\Debug\net6.0\LINQ_Eruption.exe
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\bin\Debug\net6.0\LINQ_Eruption.deps.json
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\bin\Debug\net6.0\LINQ_Eruption.runtimeconfig.json
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\bin\Debug\net6.0\LINQ_Eruption.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\bin\Debug\net6.0\LINQ_Eruption.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\LINQ_Eruption.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\refint\LINQ_Eruption.dll
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\LINQ_Eruption.pdb
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\LINQ_Eruption.genruntimeconfig.cache
+C:\Users\lambs\Desktop\C#_.NETv22\assignments\LINQ_Eruption\obj\Debug\net6.0\ref\LINQ_Eruption.dll
