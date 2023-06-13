@@ -1,0 +1,16 @@
+@model Post
+
+<h1>@Model.Topic</h1>
+<h3>@Model.Body</h3>
+<img src="@Model.ImgUrl" alt="user image">
+@* need img tag to display @Model.ImgUrl *@
+
+<form
+    asp-controller="Home"
+    asp-action="DeletePost"
+    asp-route-postId="@Model.PostId"
+    method="POST"
+>
+
+<button class="btn btn-outline-danger">Delete</button>
+</form>

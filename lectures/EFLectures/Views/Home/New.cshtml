@@ -1,0 +1,32 @@
+@model Post 
+
+<div class="container w-75 mx-auto">
+    <h2 class="text-center">New Post</h2>
+
+    <form class="shadow p-3 rounded" asp-controller="Home" asp-action="CreatePost" method="POST">
+
+        <div class="mb-3">
+            <label asp-for="Topic"></label>
+            <span asp-validation-for="Topic" class="text-danger font-weight-bold"></span>
+            <input class="form-control" asp-for="Topic" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Body"></label>
+            <span asp-validation-for="Body" class="text-danger font-weight-bold"></span>
+            <input class="form-control" asp-for="Body" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ImgUrl"></label>
+            <span asp-validation-for="ImgUrl" class="text-danger font-weight-bold"></span>
+            <input class="form-control" asp-for="ImgUrl" />
+        </div>
+
+        <button class="btn btn-outline-success">Submit</button>
+    </form>
+
+</div>
+
+
+
