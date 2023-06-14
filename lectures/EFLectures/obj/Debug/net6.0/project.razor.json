@@ -18389,6 +18389,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\lectures\\EFLectures\\Views\\Home\\_Register.cshtml",
+      "TargetPath": "Views\\Home\\_Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\lectures\\EFLectures\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -18416,6 +18421,11 @@
     {
       "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\lectures\\EFLectures\\Views\\Home\\AllPosts.cshtml",
       "TargetPath": "Views\\Home\\AllPosts.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\lambs\\Desktop\\C#_.NETv22\\lectures\\EFLectures\\Views\\Home\\_Login.cshtml",
+      "TargetPath": "Views\\Home\\_Login.cshtml",
       "FileKind": "mvc"
     },
     {

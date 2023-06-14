@@ -1,0 +1,62 @@
+@model Dish
+@{
+    ViewData["Title"] = "Add new Dish";
+}
+
+
+<div class="text-center">
+    <h1 class="mb-3">Add a new Dish!</h1>
+    <p><a href="/">Home</a> | Add a dish</p>
+    <hr>
+</div>
+
+<form asp-controller="Home" asp-action="CreateDish">
+    <div class="container-fluid">
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <span class="form-text text-danger" asp-validation-for="Name"></span>
+            <br>
+            <input type="text" class="form-control" asp-for="Name">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Chef" class="form-label"></label>
+            <span class="form-text text-danger" asp-validation-for="Chef"></span>
+            <br>
+            <input type="text" class="form-control" asp-for="Chef">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Calories" class="form-label"></label>
+            <span class="form-text text-danger" asp-validation-for="Calories"></span>
+            <br>
+            <input type="number" class="form-control" asp-for="Calories">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Tastiness" class="form-label"></label>
+            <span class="form-text text-danger" asp-validation-for="Tastiness"></span>
+            <br>
+            <select asp-for="Tastiness">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <div class="col-start-3 row-span-2">
+            <label asp-for="Description" class="form-label"></label>
+            <span class="form-text text-danger" asp-validation-for="Description"></span>
+            <br>
+            <textarea asp-for="Description" class="form-control" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="container">
+            <br>
+            <button class="btn btn-success shadow">Add Dish</button>
+        </div>
+    </div>
+</form>

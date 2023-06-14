@@ -1,0 +1,40 @@
+@model User
+
+                <form asp-controller="Home" asp-action="Register" method="POST">
+
+                            <h2 class="text-primary text-decoration-underline fw-bold">Register</h2>
+
+                            <div class="form-group">
+                                <label asp-for="Name">Name:</label>
+                                <span asp-validation-for="Name" class="text-danger font-weight-bold"></span>
+                                <input asp-for="Name" class="form-control"
+                                    placeholder="please enter your name...">
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Email">Email:</label>
+                                <span asp-validation-for="Email" class="text-danger font-weight-bold"></span>
+                                <input asp-for="Email" class="form-control"
+                                    placeholder="please enter your email...">
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Password">Password:</label>
+                                <span asp-validation-for="Password" class="text-danger font-weight-bold"></span>
+                                <input asp-for="Password" class="form-control"
+                                    placeholder="please create your password...">
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="PasswordConfirm">Password:</label>
+                                <span asp-validation-for="PasswordConfirm" class="text-danger font-weight-bold"></span>
+                                <input asp-for="PasswordConfirm" class="form-control"
+                                    placeholder="please re-enter your password...">
+                            </div>
+
+                            <br>
+
+                            <button class="btn btn-outline-primary">Register</button>
+
+                        </form>
+
