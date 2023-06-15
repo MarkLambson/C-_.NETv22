@@ -27,6 +27,10 @@ public class User
     public string PasswordConfirm { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+// relationship properties below-------------------------------------------------------------//
+
+    public List<Post> CreatedPosts { get; set; } = new List<Post>(); // default to new empty List<Post>, do not ? nullable
 }
 
 // ADD CUSTOM VALIDATIONS BELOW
