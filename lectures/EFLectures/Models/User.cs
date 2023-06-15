@@ -30,7 +30,7 @@ public class User
 
 // relationship properties below-------------------------------------------------------------//
 
-    public List<Post> CreatedPosts { get; set; } = new List<Post>(); // default to new empty List<Post>, do not ? nullable
+    public List<Post> CreatedPosts { get; set; } = new List<Post>(); // default to new empty List<Post>, do not '?' nullable
 }
 
 // ADD CUSTOM VALIDATIONS BELOW

@@ -1,0 +1,23 @@
+@model User
+
+<h1>@Model.Name</h1>
+<h2>Created Posts Count: @Model.CreatedPosts.Count</h2>
+
+@foreach (Post post in Model.CreatedPosts)
+{
+    <div class="card shadow rounded mx-auto w-75 mb-3">
+        <h4 class="card-title text-center bg-dark text-light py-2 rounded-top">@post.Topic</h4>
+
+        <div class="card-body">
+            <p class="card-text">@post.Body</p>
+            <small class="text-muted">Submitted on: @post.CreatedAt</small>
+            <br>
+            <small class="text-muted">Submitted by: @post.Author?.Name</small> 
+            @* included ? with Author says if null do not display anything after this *@
+        </div>
+
+        <img src="@post.ImgUrl" alt="User Posted Img" class="card-img-bottom" />
+        <a asp-controller="Post" asp-action="ViewPost" asp-route-id="@post.PostId">View Post</a>
+        <a asp-controller="Post" asp-action="EditPost" asp-route-postId="@post.PostId">Edit Post</a>
+    </div>
+}

@@ -130,6 +130,15 @@ public class PostController : Controller
     }
 
 
+    [HttpGet("profile")]
+    public IActionResult Profile()
+    {
+        User? dbUser = db.Users.Include(user => user.CreatedPosts).FirstOrDefault(user => user.UserId == HttpContext.Session.GetInt32("UUID"));
+
+        return View("Profile", dbUser);
+    }
+
+
 
     public IActionResult Privacy()
     {
