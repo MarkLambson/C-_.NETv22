@@ -6,19 +6,36 @@
 
 @foreach (Post post in Model)
 {
+    bool userAlreadyLiked = post.UserLikes.Any(like => like.UserId == Context.Session.GetInt32("UUID"));
+
     <div class="card shadow rounded mx-auto w-75 mb-3">
         <h4 class="card-title text-center bg-dark text-light py-2 rounded-top">@post.Topic</h4>
 
         <div class="card-body">
             <p class="card-text">@post.Body</p>
+            <p class="card-text">Likes: @post.UserLikes.Count</p>
             <small class="text-muted">Submitted on: @post.CreatedAt</small>
             <br>
             <small class="text-muted">Submitted by: @post.Author?.Name</small> 
-            @* included ? with Author says if null do not display anything after this *@
+            @* included ? with Author, says if null do not display anything after this *@
         </div>
 
         <img src="@post.ImgUrl" alt="User Posted Img" class="card-img-bottom" />
         <a asp-controller="Post" asp-action="ViewPost" asp-route-id="@post.PostId">View Post</a>
         <a asp-controller="Post" asp-action="EditPost" asp-route-postId="@post.PostId">Edit Post</a>
+        @* for likes  *@
+        <div class="card-footer text-center">
+            <form asp-controller="Post" asp-action="LikePost" asp-route-postId="@post.PostId" method="POST">
+                <button class="btn btn-outline-info">
+                    @if(userAlreadyLiked)
+                    {
+                        <span>Unlike</span>
+                    } else 
+                    {
+                        <span> Like </span> 
+                    }
+                </button>
+            </form>
+        </div>
     </div>
 }

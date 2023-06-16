@@ -31,6 +31,7 @@ public class User
 // relationship properties below-------------------------------------------------------------//
 
     public List<Post> CreatedPosts { get; set; } = new List<Post>(); // default to new empty List<Post>, do not '?' nullable
+    public List<UserPostLike> LikedPosts { get; set; } = new List<UserPostLike>();
 }
 
 // ADD CUSTOM VALIDATIONS BELOW

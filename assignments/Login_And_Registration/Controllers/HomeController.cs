@@ -77,7 +77,7 @@ public class HomeController : Controller
             // normally dont be specific with errors, only for lecture
             // unspecified example "invalid email/password combination"
             // malicious users like specific errors
-            ModelState.AddModelError("LoginPassword", "invalid password");
+            ModelState.AddModelError("LoginPassword", "invalid email/password combination");
             return Index();
         }
 

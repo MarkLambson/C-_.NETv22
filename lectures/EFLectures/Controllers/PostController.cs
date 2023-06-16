@@ -24,7 +24,7 @@ public class PostController : Controller
     [HttpGet("/posts")]
     public IActionResult AllPosts()
     {
-        List<Post> allPosts = db.Posts.Include(post => post.Author).ToList();
+        List<Post> allPosts = db.Posts.Include(post => post.Author).Include(post => post.UserLikes).ToList();
         return View("AllPosts", allPosts);
     }
 
@@ -63,7 +63,8 @@ public class PostController : Controller
     [HttpGet("posts/{id}")]
     public IActionResult ViewPost(int id)
     {
-        Post? post = db.Posts.FirstOrDefault(post => post.PostId == id);
+        Post? post = db.Posts.Include(post => post.Author).Include(post => post.UserLikes).ThenInclude(like => like.User).FirstOrDefault(post => post.PostId == id);
+        //ThenInclude() is like a nested Include statement
 
         if (post == null)
         {
@@ -136,6 +137,34 @@ public class PostController : Controller
         User? dbUser = db.Users.Include(user => user.CreatedPosts).FirstOrDefault(user => user.UserId == HttpContext.Session.GetInt32("UUID"));
 
         return View("Profile", dbUser);
+    }
+
+
+    // like button
+    [HttpPost("posts/{postId}/like")]
+    public IActionResult LikePost (int postId)
+    {
+        //this existingLike and if statment only exist for something like a like button (user can only use once)
+        //for something like a comment, you would not have this since users can usually comment multiple times on one post
+        UserPostLike? existingLike = db.UserPostLikes.FirstOrDefault(like => like.UserId == HttpContext.Session.GetInt32("UUID") && like.PostId == postId);
+
+        if(existingLike == null)
+        {
+            UserPostLike newLike = new UserPostLike()
+            {
+                PostId = postId,
+                UserId = (int)HttpContext.Session.GetInt32("UUID")
+            };
+
+            db.UserPostLikes.Add(newLike);
+        }
+        else
+        {
+            db.UserPostLikes.Remove(existingLike);
+        }
+
+        db.SaveChanges();
+        return RedirectToAction("AllPosts");
     }
 
 

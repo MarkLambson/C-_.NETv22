@@ -14,3 +14,9 @@
 
 <button class="btn btn-outline-danger">Delete</button>
 </form>
+
+<h4>Who liked this post?</h4>
+@foreach (UserPostLike like in Model.UserLikes)
+{
+    <p>@like.User?.Name</p>
+}

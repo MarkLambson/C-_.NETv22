@@ -22,9 +22,10 @@ public class Post
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
 
-// relationship properties below-------------------------------------------------------------//
+    // relationship properties below-------------------------------------------------------------//
 
 // One to Many (left join)
     public int UserId { get; set; } //has to match primary key name (UserID) from User.cs
     public User? Author { get; set; } //difference between this and above is this is pointed to by the UserId above, this Author object is the actual User model in db
+    public List<UserPostLike> UserLikes { get; set; } = new List<UserPostLike>();
 }
