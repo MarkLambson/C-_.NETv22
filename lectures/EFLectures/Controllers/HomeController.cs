@@ -21,6 +21,11 @@ public class HomeController : Controller
 [HttpGet("")]
 public IActionResult Index()
 {
+    //if statement will make the nav "Home" button go to our home page when logged in, instead of the login/reg page
+    if(HttpContext.Session.GetInt32("UUID") != null)
+    {
+        return RedirectToAction("AllPosts", "Post");
+    }
     return View("Index");
 }
 
