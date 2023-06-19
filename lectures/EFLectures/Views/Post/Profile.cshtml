@@ -2,11 +2,13 @@
 
 <h1>@Model.Name</h1>
 <h2>Created Posts Count: @Model.CreatedPosts.Count</h2>
+<h2>Liked Posts Count: @Model.LikedPosts.Count</h2>
 
 @foreach (Post post in Model.CreatedPosts)
 {
     <div class="card shadow rounded mx-auto w-75 mb-3">
-        <h4 class="card-title text-center bg-dark text-light py-2 rounded-top">@post.Topic</h4>
+        <h4 class="card-title text-center bg-dark text-light py-2 rounded-top">@post.Topic </h4>
+        <h3>@post.UserLikes.Count likes on this post</h3>
 
         <div class="card-body">
             <p class="card-text">@post.Body</p>

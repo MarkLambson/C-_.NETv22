@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Categories";
+}
+
+@model Category
+
+<h1 class="text-3xl mb-4">
+    <a href="/">Products</a> | <a href="categories">Categories</a>
+</h1>
+
+<div class="Category-page-container d-flex justify-content-around mt-4">
+    <div class="left-side col-5">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h2>New Category</h2>
+            </div>
+            <div class="card-body">
+                <form asp-action="CreateCategory" asp-controller="Home" method="post" class="d-flex flex-column align-items-end">
+                    <div class="form-floating col-12">
+                        <input asp-for="Name" class="form-control" placeholder="Category Name:">
+                        <label asp-for="Name">Category Name:</label>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <input type="submit" value="Create Category" class="btn btn-primary mt-3">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="right-side col-5">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h2>All Categories</h2>
+            </div>
+            <div class="card-body d-flex flex-column">
+                @{
+                    foreach(Category? Category in ViewBag.AllCategories)
+                    {
+                        <a asp-action="AddToCategory" asp-controller="Home" asp-route-CategoryId="@Category?.CategoryId">@Category?.Name</a>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>

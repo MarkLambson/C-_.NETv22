@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Products";
+}
+
+@model Product
+
+<h1 class="text-3xl mb-4">
+    <a href="/">Products</a> | <a href="categories">Categories</a>
+</h1>
+
+<div class="product-page-container d-flex justify-content-around mt-4">
+    <div class="left-side col-5">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h2>New Product</h2>
+            </div>
+            <div class="card-body">
+                <form asp-action="CreateProduct" asp-controller="Home" method="post" class="d-flex flex-column align-items-end">
+                    <div class="form-floating col-12">
+                        <input asp-for="Name" class="form-control" placeholder="Product Name:">
+                        <label asp-for="Name">Product Name:</label>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-floating mt-3 col-12">
+                        <input asp-for="Description" class="form-control" placeholder="Description:">
+                        <label asp-for="Description">Description:</label>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-floating mt-3 col-12">
+                        <input asp-for="Price" class="form-control" placeholder="Price:">
+                        <label asp-for="Price">Price:</label>
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <input type="submit" value="Create Product" class="btn btn-primary mt-3">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="right-side col-5">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h2>All Products</h2>
+            </div>
+            <div class="card-body d-flex flex-column">
+                @{
+                    foreach(Product? Product in ViewBag.AllProducts)
+                    {
+                        <a asp-action="AddToProduct" asp-controller="Home" asp-route-ProductId="@Product.ProductId">@Product.Name</a>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>

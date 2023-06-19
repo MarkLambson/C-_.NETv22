@@ -134,7 +134,7 @@ public class PostController : Controller
     [HttpGet("profile")]
     public IActionResult Profile()
     {
-        User? dbUser = db.Users.Include(user => user.CreatedPosts).FirstOrDefault(user => user.UserId == HttpContext.Session.GetInt32("UUID"));
+        User? dbUser = db.Users.Include(user => user.CreatedPosts).ThenInclude(post => post.UserLikes).Include(user => user.LikedPosts).FirstOrDefault(user => user.UserId == HttpContext.Session.GetInt32("UUID"));
 
         return View("Profile", dbUser);
     }

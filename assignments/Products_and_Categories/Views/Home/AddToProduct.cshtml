@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Assign Categories To Product";
+}
+
+@model Association
+
+<h1 class="text-3xl mb-4">
+    <a href="/">Products</a> | <a href="/categories">Categories</a>
+</h1>
+
+<h2 class="text-center mb-3">Product Name: @ViewBag.OneProduct.Name</h2>
+
+<div class="add-to-product-container d-flex justify-content-around mt-4">
+    <div class="left-side col-5">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h3>Categories</h3>
+            </div>
+            <div class="card-body">
+                @{
+                    foreach (Association? assoc in ViewBag.OneProduct.AssoCategories)
+                    {
+                        <div class="d-flex align-items-center gap-4 mb-3">
+                            <p class="m-0">@assoc?.Category?.Name</p>
+                            <form asp-action="DeleteAssociation" asp-controller="Home" asp-route-AssocId="@assoc?.AssociationId"
+                            asp-route-navRoute="ToProduct"
+                                method="post">
+                                <input type="submit" value="Delete" class="btn btn-danger">
+                            </form>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <div class="right-side col-5">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h4>Assign a Category</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="CreateAssociationToProduct" asp-controller="Home" method="post">
+
+                    <div class="form-floating">
+                        <select class="form-select" asp-for="CategoryId">
+
+                            @{
+                                foreach (Category? Category in ViewBag.FilteredCategories)
+                                {
+                                    <option value="@Category?.CategoryId">@Category?.Name</option>
+                                }
+                            }
+
+                        </select>
+                        <label asp-for="CategoryId">Remaining Categories:</label>
+                    </div>
+
+                    <input type="hidden" asp-for="ProductId" value="@ViewBag.OneProduct.ProductId">
+
+                    <input type="submit" value="Assign" class="btn btn-primary mt-3">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
