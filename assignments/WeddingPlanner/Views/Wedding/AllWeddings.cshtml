@@ -1,0 +1,51 @@
+@model List<Wedding>
+
+<h2 class="text-center">&hearts;&hearts; All Weddings &hearts;&hearts;</h2>
+
+<hr>
+
+<table class="table table-dark">
+    <tr>
+        <th>Wedding of</th>
+        <th>Date</th>
+        <th>Guest Count</th>
+        <th>Action</th>
+    </tr>
+    @foreach (Wedding wedding in Model)
+    {
+        <tr>
+            <td><a asp-controller="Wedding" asp-action="ViewWedding" asp-route-id="@wedding.WeddingId">@wedding.WedderOne &
+                    @wedding.WedderTwo</a></td>
+            <td>@wedding?.Date</td>
+            <td>@wedding?.AllGuests.Count</td>
+            <td>
+                @{
+                    if (Context.Session.GetInt32("UUID") == wedding?.UserId)
+                    {
+                        <form class="p-3 rounded" asp-controller="Wedding" asp-action="Delete" asp-route-id="@wedding?.WeddingId"
+                            method="POST">
+                            <input type="submit" value="Delete">
+                        </form>
+                    }
+                    else
+                    {
+                        if (wedding.AllGuests.Any(guest => guest.UserId == Context.Session.GetInt32("UUID")))
+                        {
+                            <form class="p-3 rounded" asp-controller="Wedding" asp-action="UnRSVP" asp-route-id="@wedding.WeddingId"
+                                method="POST">
+                                <input type="submit" value="Un-RSVP">
+                            </form>
+                        }
+                        else
+                        {
+                            <form class="p-3 rounded" asp-controller="Wedding" asp-action="UpdateGuests"
+                                asp-route-id="@wedding.WeddingId" method="POST">
+                                <input type="submit" value="RSVP">
+                            </form>
+                        }
+                    }
+                }
+            </td>
+        </tr>
+    }
+</table>

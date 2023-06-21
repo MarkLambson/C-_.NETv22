@@ -1,0 +1,23 @@
+@model Wedding
+
+<h1>&hearts;&hearts; @Model.WedderOne & @Model.WedderTwo's Wedding &hearts;&hearts;</h1>
+
+<div class="row mt-5">
+    <div class="col-md">
+        <h2>Date: @Model.Date?.Date.ToString("MM/dd/yyyy")</h2>
+        <h2 class="text-center">Guest List</h2>
+
+        <hr>
+
+        @foreach (Guest guest in Model.AllGuests)
+        {
+            <div class="card shadow rounded mx-auto w-25 mb-3 text-center bg-dark text-light">
+
+                <div class="card-body">
+                    <p class="card-text">@guest.User?.FirstName @guest.User?.LastName</p>
+                </div>
+
+            </div>
+        }
+    </div>
+</div>

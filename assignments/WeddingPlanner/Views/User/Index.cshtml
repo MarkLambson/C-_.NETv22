@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Login and Registration";
+}
+
+<div class="text-center">
+    <h1 class="fs-1 font-weight-bold text-decoration-underline">
+        &hearts;&hearts; Welcome to Wedding Planner &hearts;&hearts;
+    </h1>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md">@await Html.PartialAsync("_Register")</div>
+
+    <div class="col-md">@await Html.PartialAsync("_Login")</div>
+</div>

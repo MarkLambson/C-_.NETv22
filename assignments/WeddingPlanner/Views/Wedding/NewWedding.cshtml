@@ -1,0 +1,41 @@
+@model Wedding
+
+<div class="container w-75 mx-auto bg-dark text-light">
+    <h2 class="text-center">&hearts;&hearts; Plan a Wedding &hearts;&hearts;</h2>
+
+    <hr>
+
+    <form 
+    class="shadow p-3 rounded" 
+    asp-controller="Wedding" 
+    asp-action="CreateWedding" 
+    method="POST">
+
+        <div class="mb-3">
+            <label asp-for="WedderOne"></label>
+            <span class="text-danger font-weight-bold" asp-validation-for="WedderOne"></span>
+            <input asp-for="WedderOne" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="WedderTwo"></label>
+            <span class="text-danger font-weight-bold" asp-validation-for="WedderTwo"></span>
+            <input asp-for="WedderTwo" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Date"></label>
+            <span class="text-danger font-weight-bold" asp-validation-for="Date"></span>
+            <input asp-for="Date" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Address"></label>
+            <span class="text-danger font-weight-bold" asp-validation-for="Address"></span>
+            <input asp-for="Address" class="form-control">
+        </div>
+        
+        <input type="submit" value="Create">
+    </form>
+
+</div>
