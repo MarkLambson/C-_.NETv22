@@ -45,7 +45,7 @@ public class User
 
 
     public List<Guest> AllGuests { get; set; } = new List<Guest>();
-    // public List<Wedding> CreatedWeddings { get; set; } = new List<Wedding>();
+    // public List<Wedding> CreatedWeddings { get; set; } = new List<Wedding>(); //<---not needed in WeddingPlanner
 }
 
 

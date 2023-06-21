@@ -11,7 +11,7 @@ public class Guest
 
     // relationship properties below-------------------------------------------------------------//
 
-    public int? UserId { get; set; } //added ? to int, saved error on WeddingController
+    public int? UserId { get; set; } //added ? to int, got rid of error on WeddingController
     public User? User { get; set; }
 
     public int WeddingId { get; set; }

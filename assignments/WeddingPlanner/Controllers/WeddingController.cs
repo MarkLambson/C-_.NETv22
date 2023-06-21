@@ -5,18 +5,18 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WeddingPlanner.Models;
 
-namespace WeddingPlanner.Controllers;
+namespace WeddingPlanner.Controllers; //<--- change to current namespace
 
-[SessionCheck]
+[SessionCheck] //<--- session check entire controller
 public class WeddingController : Controller
 {
     private readonly ILogger<WeddingController> _logger;
-    private MyContext db;
+    private MyContext db; //<--- change to db
 
     public WeddingController(ILogger<WeddingController> logger, MyContext context)
     {
         _logger = logger;
-        db = context;
+        db = context; //<--- change to db
     }
 // GET TO WORK BELOW :)---------------------------------------------------------------------------------------------------------------------//
 
@@ -72,7 +72,7 @@ public class WeddingController : Controller
     }
 
 
-    // RSVP (like)
+    // RSVP (like) could combine with unrsvp as well
     [HttpPost("weddings/{id}")]
     public IActionResult UpdateGuests(int id)
     {
@@ -121,7 +121,7 @@ public class WeddingController : Controller
     }
 
 
-    // EDIT VIEW (not using for WedPlan, for belt reference)
+    // EDIT VIEW (not using for WeddingPlanner, for future reference)
     [HttpGet("weddings/{id}/edit")]
     public IActionResult EditWedding(int id)
     {
@@ -130,7 +130,7 @@ public class WeddingController : Controller
     }
 
 
-    // UPDATE (not using for WedPlan, for belt reference)
+    // UPDATE (not using for WeddingPlanner, for future reference)
     [HttpPost("weddings/{id}/update")]
     public IActionResult UpdateWedding(Wedding newWedding, int id)
     {
@@ -172,13 +172,13 @@ public class SessionCheckAttribute : ActionFilterAttribute
 {
     public override void OnActionExecuting(ActionExecutingContext context)
     {
-        // Find the session, but remember it may be null so we need int?
+        // Find session, keep int? because session could be null
         int? userId = context.HttpContext.Session.GetInt32("UUID");
         // Check to see if we got back null
         if (userId == null)
         {
-            // Redirect to the Index page if there was nothing in session
-            // "Home" here is referring to "HomeController", you can use any controller that is appropriate here
+            // Redirect to the Index or Login if null
+            // "User" here is referring to "UserController", you can use any controller that is appropriate here
             context.Result = new RedirectToActionResult("Index", "User", null);
         }
     }

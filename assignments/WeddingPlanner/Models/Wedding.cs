@@ -37,7 +37,7 @@ public class Wedding
 
     public int UserId { get; set; }
 
-    // public User? Creator { get; set; } //<--- ONLY NEEDED TO SEE PERSON DISPLAYING THE WEDDING, DID NOT USE IN WEDPLAN
+    // public User? Creator { get; set; } //<--- ONLY NEED Creator TO SEE PERSON DISPLAYING THE WEDDING, did not in WeddingPlanner but might need for future
 
     public List<Guest> AllGuests { get; set; } = new List<Guest>();
 }
@@ -57,7 +57,7 @@ public class Wedding
             // Check to see if DateTime is less than or equal to current DateTime
             if ((DateTime)value <= DateTime.Now.Date)
             {
-            // If yes, yeet an error
+            // If yes, yeet another error
                 return new ValidationResult("Wedding must be in the future!");
             }
             else

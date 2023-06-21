@@ -3,17 +3,17 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WeddingPlanner.Models;
 
-namespace WeddingPlanner.Controllers;
+namespace WeddingPlanner.Controllers; //<--- change to current namespace
 
 public class UserController : Controller
 {
     private readonly ILogger<UserController> _logger;
-    private MyContext db;
+    private MyContext db; //<--- change to db
 
     public UserController(ILogger<UserController> logger, MyContext context)
     {
         _logger = logger;
-        db = context;
+        db = context; //<--- change to db
     }
 // GET TO WORK BELOW :)---------------------------------------------------------------------------------------------------------------------//
 
