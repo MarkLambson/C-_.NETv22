@@ -8,45 +8,45 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Products_and_Categories
 build_property.RootNamespace = Products_and_Categories
-build_property.ProjectDir = c:\Users\lambs\Desktop\C#_.NETv22\assignments\Products_and_Categories\
+build_property.ProjectDir = c:\Users\lambs\Desktop\Coding_Dojo\C#_.NETv22\assignments\Products_and_Categories\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\lambs\Desktop\C#_.NETv22\assignments\Products_and_Categories
+build_property.MSBuildProjectDirectory = c:\Users\lambs\Desktop\Coding_Dojo\C#_.NETv22\assignments\Products_and_Categories
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/Home/AddToCategory.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/Home/AddToCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRUb0NhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/Home/AddToProduct.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/Home/AddToProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRUb1Byb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/Home/Categories.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/Home/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/Home/Products.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/Home/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/Shared/Error.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/_ViewImports.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/_ViewStart.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/lambs/Desktop/C\#_.NETv22/assignments/Products_and_Categories/Views/Shared/_Layout.cshtml]
+[c:/Users/lambs/Desktop/Coding_Dojo/C\#_.NETv22/assignments/Products_and_Categories/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6c5nh1stoj

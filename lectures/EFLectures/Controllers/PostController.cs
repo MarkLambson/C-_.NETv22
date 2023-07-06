@@ -88,7 +88,7 @@ public class PostController : Controller
         return RedirectToAction("AllPosts");
     }
 
-
+//--------------------------FOR BELT UPDATE-------------------------------------------------------------------------------------------//
     //update
     [HttpGet("posts/{postId}/edit")]
     public IActionResult EditPost(int postId)
@@ -101,8 +101,6 @@ public class PostController : Controller
         }
         return View("Edit", post);
     }
-
-
 
     [HttpPost("posts/{postId}/edit")]
     public IActionResult UpdatePost(int postId, Post updatedPost)
@@ -129,6 +127,9 @@ public class PostController : Controller
 
         return RedirectToAction("ViewPost", new { id = dbPost.PostId });
     }
+
+    //--------------------------FOR BELT UPDATE-------------------------------------------------------------------------------------------//
+
 
 
     [HttpGet("profile")]
